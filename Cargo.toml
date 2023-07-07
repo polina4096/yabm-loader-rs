@@ -1,0 +1,10 @@
+[package]
+name = "yabm-loader-rs"
+version = "0.1.0"
+edition = "2021"
+
+
+[dependencies]
+sqlx = { version = "0.6", features = [ "runtime-tokio-rustls", "mysql" ] }
+tokio = { version = "1.29.0", features = ["full"] }
+async_zip = { version = "0.0.15", features = ["full"] }
